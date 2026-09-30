@@ -1,8 +1,13 @@
 __pycache__/
 *.pyc
 .env
+.env.*
 .venv/
 env/
 venv/
 .ipynb_checkpoints/
 *.log
+cache/
+gold/sources/
+
+raw/documents/

@@ -1,11 +1,19 @@
 import json
+import os
 
 GOLD_JSON = 'gold/standards.json'
 RAG_DOCS_OUT = 'gold/rag_documents.jsonl'
 
 def build_rag():
+    if not os.path.exists(GOLD_JSON):
+        print("No gold json found.")
+        return
+        
     with open(GOLD_JSON, 'r', encoding='utf-8') as f:
-        standards = json.load(f)
+        try:
+            standards = json.load(f)
+        except:
+            standards = []
         
     documents = []
     
@@ -15,6 +23,7 @@ def build_rag():
             'title': std.get('official_title'),
             'department': std.get('department'),
             'source_url': std.get('source_urls'),
+            'source_type': std.get('source_type'),
             'corpus_tier': 'gold'
         }
         
@@ -22,7 +31,7 @@ def build_rag():
         if std.get('scope'):
             doc = {
                 'text': f"{std.get('standard_number')}: {std.get('official_title')}\nScope: {std.get('scope')}",
-                'metadata': {**base_meta, 'field': 'scope', 'source_type': 'official_summary'}
+                'metadata': {**base_meta, 'field': 'scope'}
             }
             documents.append(doc)
             
@@ -30,7 +39,7 @@ def build_rag():
         if std.get('applicability'):
             doc = {
                 'text': f"Applicability for {std.get('standard_number')}: {std.get('applicability')}",
-                'metadata': {**base_meta, 'field': 'applicability', 'source_type': 'official_summary'}
+                'metadata': {**base_meta, 'field': 'applicability'}
             }
             documents.append(doc)
             
@@ -38,7 +47,15 @@ def build_rag():
         if std.get('key_requirements'):
             doc = {
                 'text': f"Key Requirements for {std.get('standard_number')}: {std.get('key_requirements')}",
-                'metadata': {**base_meta, 'field': 'key_requirements', 'source_type': 'official_summary'}
+                'metadata': {**base_meta, 'field': 'key_requirements'}
+            }
+            documents.append(doc)
+            
+        # Conformity chunk
+        if std.get('conformity_information'):
+            doc = {
+                'text': f"Conformity Information for {std.get('standard_number')}: {std.get('conformity_information')}",
+                'metadata': {**base_meta, 'field': 'conformity_information'}
             }
             documents.append(doc)
             

@@ -1,0 +1,31 @@
+{
+  "build_date": "2026-09-30",
+  "schema_version": "1.0",
+  "record_counts": {
+    "rag_documents.jsonl": 13867,
+    "catalogue_records.jsonl": 23866,
+    "scope_snippets.jsonl": 598
+  },
+  "files": {
+    "rag_documents.jsonl": {
+      "size_bytes": 20061694,
+      "sha256": "68b27d8fa4e8b13d469b1116716c07cd85c446234461adea69cca4b82379d23b",
+      "record_count": 13867
+    },
+    "catalogue_records.jsonl": {
+      "size_bytes": 9461181,
+      "sha256": "3325e45dd23870ddf73697a3b21cb4d3a8b7d32f99255b128fa1780a7ad092e9",
+      "record_count": 23866
+    },
+    "scope_snippets.jsonl": {
+      "size_bytes": 427711,
+      "sha256": "25a7521ba8e10df610c6e3246d7c61592882fbfce01b0d8f8985f8663f15ef59",
+      "record_count": 598
+    }
+  },
+  "provenance_classes_present": [
+    "Official document \u2014 third-party host",
+    "Official catalogue (BIS)"
+  ],
+  "notes": "Documents are older editions where edition_status = 'older-than-catalogue'"
+}

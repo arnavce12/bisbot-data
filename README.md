@@ -1,60 +1,103 @@
-# BISBOT DATA RESEARCH DATASET
+# BISBOT Data
 
-This repository contains the data collection, cleaning, enrichment, and RAG-corpus preparation work behind the SIH 2026 BISBOT project.
+This repository contains the data and research artifacts for the SIH 2026 BISBOT project. 
 
-## 1. Objective and Motivation
-The BISBOT project aims to provide accurate natural language access to Indian Standards. A major challenge in this domain is that catalogue metadata (Standard Number, Title, Department) alone is insufficient to support semantic Retrieval-Augmented Generation (RAG). Users ask about products, materials, testing requirements, and conformity schemes—not just catalogue identifiers.
+BISBOT is an AI-powered assistant for accessing and understanding Indian Standards and BIS-related compliance information. This dataset provides the necessary standard catalogues, extracted evidence, and scope definitions that allow BISBOT to find relevant standards and answer queries based on verified source texts, rather than inventing answers.
 
-To solve this, we created a dual-tier dataset:
-1. **A Broad Collected Catalogue (~23k records):** Used for standard discovery and broad lookup.
-2. **A Gold Semantic Corpus (60 records):** Deeply enriched product specification standards used as the primary high-quality knowledge base for natural language retrieval.
+## 1. What This Data Does
 
-**IMPORTANT DISTINCTION:** We do NOT claim that our 23k catalogue rows are equivalent to 23k semantically enriched standards. The catalogue is for breadth; the Gold corpus is for semantic depth.
+BISBOT needs more than a simple list of standard numbers and titles to be useful. When a user asks:
+- "Which standard applies to this product?"
+- "What does the standard cover?"
+- "What evidence supports that answer?"
 
-## 2. The Raw Dataset (`raw/`)
-The raw data consists of originally collected CSV and Excel files containing catalogue information published by various BIS departments. 
-These files are strictly treated as **immutable source data**. All transformations happen programmatically without manual overwrites.
+The system requires structured data to respond accurately. 
+- The **catalogue** answers: "What standards exist?"
+- The **evidence corpus** answers: "What does the available source evidence actually say?"
 
-## 3. Cleaned Catalogue (`cleaned/`)
-The `cleaned/all_standards.csv` file represents a normalized version of all raw datasets.
-- Obvious whitespace, encoding, and duplicate issues were resolved.
-- Standard types were classified to help distinguish Product Specifications from Methods of Test, Terminology, etc.
+This separation ensures the system only provides claims backed by verifiable source texts.
 
-## 4. The Gold Semantic Corpus (`gold/`)
-We selected 60 genuinely useful standard candidates based on:
-- Being Product Specifications.
-- Representing useful real-world manufacturing queries.
-- Spanning multiple BIS departments and sectors.
-- Having publicly accessible BIS supporting material (e.g., Product Manuals, Quality Control Orders).
+## 2. What Is Included
 
-### 4.1 Enrichment Methodology
-Each Gold Standard was enriched using publicly available official BIS information. The process specifically sought to establish:
-- Scope and applicability
-- Products covered
-- Key testing and conformity requirements (e.g., Scheme-I mandatory status)
-- Keywords and related standards
+| Dataset | Purpose | Approximate Size |
+|---------|---------|------------------|
+| **Catalogue Records** (`catalogue_records.jsonl`) | Comprehensive list of Indian Standards, their titles, and metadata | ~23,866 records |
+| **Evidence Corpus** (`rag_documents.jsonl`) | Page-aware evidence chunks extracted from standard documents | ~13,867 chunks |
+| **Scope Snippets** (`scope_snippets.jsonl`) | Extracted scope text directly detailing what each standard covers | ~598 records |
 
-**Quality Gate:** If a standard lacked sufficient supporting material for natural language retrieval (i.e., we could only find its title and number), it was excluded from the Gold corpus. Hallucination of missing fields was strictly forbidden.
+*Note: The sizes reflect the current snapshot of the repository. The semantic evidence corpus represents a selected subset for research and demonstration purposes.*
 
-### 4.2 RAG-Ready Representation
-The `gold/rag_documents.jsonl` file contains retrieval-friendly chunks derived from the Gold Corpus. Each chunk preserves essential metadata (standard number, source URL, field type) and contains semantically meaningful text. This is the dataset ready for ingestion into a vector database like Qdrant.
+## 3. How the Data Was Built
 
-## 5. Limitations
-- **Source Constraints:** Synonyms and exhaustive common product names are occasionally missing if not explicitly stated in public BIS docs.
-- **Scope:** The semantic corpus is intentionally limited to 60 high-value examples to demonstrate the pipeline's effectiveness without resorting to massive, low-quality scraping.
-- **Living Documents:** Standards are frequently updated; this dataset represents a specific point-in-time snapshot.
+The data pipeline processes raw information into a usable format for the application:
 
-## 6. Reproducibility
-All steps in this pipeline are reproducible. Run the scripts in the following order:
-1. `python scripts/audit_raw.py`
-2. `python scripts/clean_catalogue.py`
-3. `python scripts/select_candidates.py`
-4. `python scripts/enrich_gold.py`
-5. `python scripts/validate_gold.py`
-6. `python scripts/build_rag_documents.py`
+BIS Catalogue → Document Discovery → Verification → Page-Aware Evidence Extraction → Scope Extraction → Validation → Selected Application Corpus
 
-## 7. Ethical and Legal Considerations
-We strictly adhered to ethical scraping guidelines:
-- **No Copyright Infringement:** We did NOT scrape, download, or redistribute full, paywalled, or copyrighted BIS standards.
-- **Fair Use:** Our dataset only contains publicly accessible supporting information (catalogue metadata, Product Manuals, KYS snippets, QCO details) necessary to establish scope and applicability.
-- **Rate Limiting:** Any automated data collection respected source server limits and prioritized caching.
+## 4. Quality and Validation
+
+Ensuring the reliability of this dataset is a core focus:
+- **Reconciliation**: Records have been reconciled against source data.
+- **Duplicates**: Legitimate duplicate catalogue entries (e.g., sharing the same IS number but differing parts) are preserved to maintain accuracy.
+- **Traceability**: All extracted evidence is directly linked to specific source documents and pages.
+- **Strict Boundaries**: Unsupported claims are not treated as verified evidence. The system is designed to return "insufficient evidence" rather than invent an answer.
+
+## 5. Coverage and Limitations
+
+It is important to understand the boundaries of this dataset:
+- The **catalogue** is broad and encompasses a large number of standards.
+- The **semantic evidence corpus** is intentionally smaller and acts as a research subset.
+- Not every current BIS standard has corresponding document evidence in this corpus.
+- The available public archive has historical coverage limitations, meaning some current standards may not have matching extracted evidence here.
+- Therefore, this dataset and BISBOT must not be treated as a complete, authoritative, or legally binding BIS database.
+
+## 6. Source and Provenance
+
+For every evidence-backed answer, BISBOT tracks where the evidence came from. Where possible, the data includes:
+- Standard number
+- Part
+- Edition/Year
+- Page
+- Source URL
+
+These source links allow users to independently verify the information. This project does not claim to be the authoritative issuer of Indian Standards.
+
+## 7. How BISBOT Uses the Data
+
+The application follows a simple workflow:
+1. **User Question**: The user asks a compliance question.
+2. **Find Evidence**: The system searches for potentially relevant standards and evidence.
+3. **Check Evidence**: The retrieved evidence is evaluated for relevance.
+4. **Generate Answer**: An answer is generated, strictly constrained by the validated evidence.
+5. **Show Provenance**: The source of the evidence is displayed to the user.
+6. **Fallback**: If the evidence is insufficient to answer the question, the system clearly states so.
+
+## 8. Data Ethics and Legal Handling
+
+- **Source Attribution**: All data is derived from publicly available sources, with attributions maintained.
+- **Redistribution**: Full copyrighted BIS standards are **not** distributed in this repository. We do not claim ownership of any BIS standards.
+- **Derived Data**: The dataset contains metadata, limited extracted evidence snippets, and links to original sources, ensuring compliance with fair use and research purposes.
+
+## 9. Reproducibility
+
+To reproduce the dataset generation, you can run the processing scripts located in the `scripts/` directory.
+
+### Example Workflow
+1. **Data Discovery**: `python scripts/discover_pdfs.py`
+   - *What it does*: Discovers links to source PDFs for standards.
+2. **Extraction**: (See individual script files for exact command line parameters).
+   - *Note*: Some scripts require external APIs (e.g., Firecrawl). Use environment variables (like `FIRECRAWL_API_KEY`) to run them. Never commit real credentials.
+
+## 10. For Technical Reviewers
+
+- **Data Formats**: Final data is exported as `.jsonl` files for efficient processing.
+- **Architecture**: The repository separates catalogue metadata from the semantic evidence chunks.
+- **Provenance**: Each evidence chunk maintains lineage back to its source URL and page number.
+
+## 11. Project Relationship
+
+This repository is the dedicated data and research companion for the SIH 2026 BISBOT project. It contains the data processing pipeline, whereas the main BISBOT application codebase is maintained separately.
+
+## 12. Status
+
+**Research/demo dataset for SIH 2026.**
+This dataset is a research demonstration. It has been validated for the purposes of the project but is intentionally limited in scope and historical coverage. It is not a production-authoritative source for Indian Standards.

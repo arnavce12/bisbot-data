@@ -1,61 +1,31 @@
-standard_number,title,department,publication_date,type,degree_of_equivalence,source_file,selection_reason,supporting_material_found,selected
-IS 19364:2025,,CHD,03 Sept 2025,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19300:2025,,CHD,13 Jun 2025,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18731:2024,,CHD,26 Jun 2024,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17441 (Part 1):2021,,CHD,31 Dec 2021,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17441 (Part 2):2021,,CHD,31 Dec 2021,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17539:2021,,CHD,31 Mar 2021,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17439:2020,,CHD,31 Aug 2020,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17440:2020,,CHD,31 Aug 2020,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17441:2020,,CHD,31 Aug 2020,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17443:2020,,CHD,31 Aug 2020,Product Specification,Indigenous,new-standards-CHEMICAL-DEPARTMENT-(CHD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18685:2024,,CED,18 Oct 2024,Product Specification,Indigenous,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18189:2023,,CED,21 Jun 2023,Product Specification,Indigenous,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19510:2025,,FAD,09 Jul 2026,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19788:2026,,FAD,15 May 2026,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18873:2024,,FAD,18 Oct 2024,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18876:2024,,FAD,18 Oct 2024,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18600:2024,,FAD,30 Mar 2024,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18579:2024,,FAD,09 Feb 2024,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18588:2024,,FAD,09 Feb 2024,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18604:2024,,FAD,30 Jan 2024,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18389:2023,,FAD,02 Nov 2023,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 18390:2023,,FAD,02 Nov 2023,Product Specification,Indigenous,new-standards-FOOD-AND-AGRICULTURE-DEPARTMENT-(FAD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19224:2025,,TED,27 Jun 2025,Product Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 4/Sec 1):2003,,LITD,16 Aug 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 2/Sec 5):2003,,LITD,09 Sept 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 516 (Part 5/Sec 3):2021,,CED,31 Jan 2021,Methods of Tests,Modified/Technically Equivalent,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17485 (Part 6):2021,,WRD,31 Mar 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17289:2021,,WRD,31 Jan 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19217:2025,,TED,27 Jun 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 516 (Part 8/Sec 1):2020,,CED,31 Aug 2020,Methods of Tests,Modified/Technically Equivalent,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19258:2025,,TED,27 Jun 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19216:2025,,TED,27 Jun 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 2/Sec 3):2002,,LITD,05 Sept 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 1885 (Part 90):2025,,LITD,13 Jun 2025,Terminology,Identical under dual numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 3/Sec 1):2002,,LITD,09 Sept 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 4/Sec 2):2002,,LITD,01 Oct 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17273:2021,,WRD,31 Jan 2021,-,-,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 2/Sec 2):2003,,LITD,29 Oct 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19280:2025,,TED,05 Aug 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19058:2024,,CED,01 Jan 2025,Process Specification,Indigenous,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17272:2021,,WRD,31 Jan 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 516 (Part 5/Sec 4):2020,,CED,31 Aug 2020,Methods of Tests,Indigenous,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 2/Sec 1):2002,,LITD,22 Oct 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 516 (Part 1/Sec 1):2021,,CED,31 Mar 2021,Methods of Tests,Indigenous,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17485 (Part 2):2021,,WRD,31 Mar 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19211:2025,,TED,25 Jul 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 516 (Part 2/Sec 4):2021,,CED,31 Mar 2021,Methods of Tests,Indigenous,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17290 (Part 1):2021,,WRD,31 Jan 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17288:2021,,WRD,31 Jan 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 516 (Part 5/Sec 2):2021,,CED,31 Mar 2021,Methods of Tests,Modified/Technically Equivalent,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17287:2021,,WRD,31 Jan 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19215:2025,,TED,27 Jun 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17485 (Part 7):2021,,WRD,31 Mar 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 4/Sec 3):2002,,LITD,29 Oct 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19065 (Part 4):2025,,TED,17 Jul 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19065 (Part 6):2025,,TED,13 Aug 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 19299:2025,,TED,05 Aug 2025,Process Specification,Identical under dual numbering,new-standards-TRANSPORT-ENGINEERING-DEPARTMENT-(TED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17161:2020,,CED,30 Jun 2020,Methods of Tests,Indigenous,new-standards-CIVIL-ENGINEERING-DEPARTMENT-(CED)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS/IEC 60512 (Part 2/Sec 6):2002,,LITD,09 Sept 2024,Code of Practice,Identical under single numbering,new-standards-ELECTRONICS-AND-INFORMATION-TECHNOLOGY-DEPARTMENT-(LITD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
-IS 17485 (Part 3):2021,,WRD,31 Mar 2021,Code of Practice,Identical under dual numbering,new-standards-WATER-RESOURCES-DEPARTMENT-(WRD)-2026-09-28.csv,Good candidate representing sector product,Yes,True
+standard_number,title,publication_date,type,degree_of_equivalence,department,original_source_file
+IS 15627:2022,Automotive Vehicles - Pneumatic Tyres for Two and Three - Wheeled Motor Vehicles - Specification First Revision,,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 14900:2026,Transparent float glass - Specification (Second Revision),28 Aug 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 19763:2026,Textile floor coverings - Aircraft Woven Carpet - Specification,04 Aug 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 19783:2026,Textiles — 100 Percent Nylon Woven Fabric — Specifications,04 Aug 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 11916:2026,Textiles – Continuous filament glass yarn for aerospace and other purposes – Specification (second revision),04 Aug 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 8694:1978,"Specification for latex bladders, seamless, valve type",,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 8688:2004,Plastics bottles for potable water - Specification (Second Revision),,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 7928:1993,"Alginic acid, food grade - Specification (First Revision)",,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 7899:2006,Alloy steel castings suitable for pressure service - Specification (Third Revision),,Product Specification,Not Equivalent,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 7538:1996,Three - Phase squirrel cage induction motors for centrifugal pumps for agricultural application - Specification (First Revision),,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 6639:1972,Specification for hexagon bolts for steel structures,,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 6529:1996,"Stainless steel blooms, billets and slabs for forging - Specification (First Revision)",,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 4373:1967,Specification for hydraulically operated stop light switches for automobiles,,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 2373:1981,Specification for water meters (bulk type) (third revision),,Product Specification,-,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 2255:1977,Specification for mild steel wire rod for the manufacture of machine screws (By Cold Heading Process) (Second Revision),,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 1852:1985,Specification for rolling and cutting tolerances for hot - Rolled steel products (Fourth Revision),,Product Specification,Not Equivalent,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 12818:2010,Unplasticized Polyvinyl Chloride (PVC-U) Screen and Casing Pipes for Bore/Tubewells - Specification (Second Revision),,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 5085:2026,"Textiles — Berets, Wool, Knitted — Specification (Third Revision)",27 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 14351:2026,Textiles — Ground Sheets (Light Weight) — Specification (First Revision),27 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 2637:2025,"Steel Roller Chains, Types S and C, Attachments and Sprockets (ISO 487 : 1998, MOD) (Third Revision)",27 Mar 2026,Product Specification,Modified/Technically Equivalent,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 19773:2026,High chrome grinding media ball for cement mills - Specification,30 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 19780:2026,TEXTILES — WOVEN CLOTH LABELS — SPECIFICATION,30 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 1887:2026,Textiles - Plied Jute Roves - Specification (third revision),30 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 8572:2025,Paper - Covered flexible / stranded copper conductors for transformer leads - Specification,30 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 7039:2026,Medical Laboratory Glassware Culture tube with screw cap - Specification First Revision,30 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 13123:2025,POLY ETHYLENE TEREPHTHALATE PET BOTTLES FOR PACKAGING OF LIQUID PESTICIDES UP TO 5 LITRES CAPACITY SPECIFICATION,30 Mar 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 19771:2026,Medical electrical equipment Dosimeters with ionization chambers as used in Radiotherapy IEC 60731:2011AMD1:2016 CSV MOD,30 Mar 2026,Product Specification,Modified/Technically Equivalent,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 17039:2026,Industrial Cable Reels (First Revision),30 Mar 2026,Product Specification,Identical under dual numbering,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 16783:2026,Cable Cleats for Electrical Installations (First Revision),30 Mar 2026,Product Specification,Identical under dual numbering,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
+IS 19821:2026,Water-Borne Polyurethane Enamel Paint (Two Pack) — Specification,14 May 2026,Product Specification,Indigenous,Unknown,File_Published_Standards_List_2026-09-28_221342.xlsx
