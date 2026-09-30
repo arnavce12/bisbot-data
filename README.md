@@ -1,6 +1,6 @@
 # BISBOT Data
 
-This repository contains the data and research artifacts for the SIH 2026 BISBOT project. 
+This repository contains the data and research artifacts for the SIH 2026 BISBOT project(BY Team ByteForge#1). 
 
 BISBOT is an AI-powered assistant for accessing and understanding Indian Standards and BIS-related compliance information. This dataset provides the necessary standard catalogues, extracted evidence, and scope definitions that allow BISBOT to find relevant standards and answer queries based on verified source texts, rather than inventing answers.
 
